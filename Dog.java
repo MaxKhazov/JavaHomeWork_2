@@ -15,7 +15,10 @@ public class Dog extends Home_Animal {
         this.have_training = have_training;
     }
 
-    public void trainDog(){
+    public Dog() {
+	}
+
+	public void trainDog(){
         System.out.println("Вы начали дрессировку...");
     }
 

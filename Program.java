@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Program {
 
     private Scanner scanner;
+    Zoo zoo = new Zoo();
+
 
     public Program(Scanner scanner) {
         this.scanner = scanner;
@@ -29,22 +31,22 @@ public class Program {
                 key = this.scanner.nextInt();
                 switch (key) {
                     case 1:
-                        System.out.println("addInZoo();");
+                        zoo.addInZoo();
                         break;
                     case 2:
-                        System.out.println("deleteFromZoo();");
+                        zoo.deleteFromZoo();
                         break;
                     case 3:
-                        System.out.println("currentGetInfo();");
+                        zoo.currentGetInfo();
                         break;
                     case 4:
-                        System.out.println("currentGetSound();");
+                        zoo.currentGetSound();
                         break;
                     case 5:
-                        System.out.println("getAllInfo();");
+                        zoo.getAllInfo();
                         break;
                     case 6:
-                        System.out.println("getAllSound();");
+                        zoo.getAllSound();
                         break;
                     case 7:
                         System.out.println("Программа завершена!");
